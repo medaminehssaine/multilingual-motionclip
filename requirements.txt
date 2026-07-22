@@ -1,0 +1,13 @@
+# On top of MotionCLIP's own environment (see its README).
+torch>=2.0
+numpy
+scipy
+pyyaml
+tqdm
+matplotlib
+pillow
+transformers
+sentencepiece
+multilingual-clip
+git+https://github.com/openai/CLIP.git
+smplx
