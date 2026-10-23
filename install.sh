@@ -12,6 +12,8 @@ for d in patches data training evaluation visualization; do
   cp "$HERE/$d"/*.py "$HERE/$d"/*.sh "$TARGET"/ 2>/dev/null || true
 done
 cp "$HERE"/data/captions/captions_*.json "$TARGET"/
+cp "$HERE"/src/datasets/humanml3d_ml.py "$TARGET"/src/datasets/
+cp "$HERE"/src/utils/per_lang_encoder.py "$TARGET"/src/utils/
 
 echo "Copied into $TARGET. Next:"
 echo "  cd $TARGET && python patch_mclip.py && python patch_ml.py && python patch_vae.py"
