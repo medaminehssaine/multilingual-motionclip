@@ -1,0 +1,9 @@
+* text=auto eol=lf
+*.pdf binary
+*.png binary
+*.jpg binary
+*.gif binary
+
+# keep the language bar about the code, not the LaTeX report
+report/** linguist-documentation
+*.tex linguist-documentation
